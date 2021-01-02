@@ -1,0 +1,183 @@
+@import './variable';
+
+#center {
+    height: 130vh;
+    background-color: $lightGray;
+    padding: 0 100px;
+
+    #inputUrl{
+        width: 100%;
+        height: 15vh;
+        background: $darkViolet;
+        background-image: url(../images/bg-boost-desktop.svg);
+        @include flex(center,row);
+        position: relative;
+        top: -50%vh;
+        transform: translateY(-50%);
+        border-radius: .8rem;
+
+        .input{
+            width: 80%;
+            height: 50%;
+            margin-right: 2rem;
+            border-radius: .5rem;
+            border: none;
+            outline: none;   
+            padding: 0rem .8rem; 
+            font-size: 1rem;
+            font-family: $font;
+        }
+
+        button {
+            @include button();
+            border-radius: .8rem;
+            padding: .8rem 1rem;
+            
+            &:hover{
+                background-color: $lightCyan;
+            }
+        }
+    }
+    .shortedLink {
+        visibility: hidden;
+        width: 100%;
+        height:auto;
+        background: #ffffff;
+        @include flex(space-between,row);
+        flex-wrap: wrap;
+        #toShort{
+            width:60%;
+            font-family: $font;
+            color: $gray;
+            padding: .8rem;
+        }
+        #shorted{
+            border: none;
+            outline :none;
+            text-align: right;
+            font-family: $font;
+            color: $lightCyan;
+            padding: .8rem;
+        }
+        button{
+            @include button();
+        }
+    }
+    .centerHeading{
+        text-align: center;
+        padding-top: 8rem;
+        font-family: $font;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: $gray;
+            margin-top: .8rem;
+        }
+    }
+    .features{
+        height: 70%;
+        @include flex(space-between,row);
+        flex-wrap: wrap;
+
+        .featureBox {
+            max-width: 300px;
+            height: 250px;
+            background: #ffffff;
+            position: relative;
+            @include flex(center,column);
+            font-family: $font;
+
+            .iconContainer{
+                width: 100px;
+                height: 100px;
+                background: $darkViolet;
+                border-radius: 50%;
+                @include flex(center,row);
+                position: absolute;
+                top: 0;
+                left: .8rem;
+                transform: translateY(-50%);
+            }
+           h1 {
+               font-size: 1.3rem;
+               text-align: left;
+           } 
+           p {
+               font-size: 1rem;
+               color:$gray;
+               text-align: justify;
+               padding: 0rem 1rem;
+           }
+        }
+    
+    }
+    
+}
+@media (max-width:1200px){
+
+    #center{
+        padding: 0px !important;
+        height: 100vh !important;
+
+        .centerHeading {
+            padding: 1rem;
+            margin-bottom: 1rem
+        }
+
+        .features {
+            @include flex(space-around,row);
+        }
+    }
+}
+
+@media (max-width:768px){
+    
+    html {
+        font-size: 70% !important;
+    }
+    .featureBox {
+        margin: 2.5rem 0rem !important;
+    }
+    #center{
+        padding: 0px !important;
+        height: auto !important;
+
+        .centerHeading {
+            margin-bottom: 2rem
+        }
+
+        #inputUrl{
+            @include flex(space-around,column);
+            height: 10vh;
+        }
+        #input {
+            margin: 0 !important;
+            height: 30% !important;
+            width: 80% !important;
+        }
+
+        button{
+            width: 80%;
+        }
+        .features {
+            @include flex(space-around,row);
+        }
+
+        .shortedLink {
+            @include flex(center,row);
+
+            #toShort {
+                width: 100% !important;
+                text-align: center;
+            }
+            #shorted {
+                margin: 1rem 0rem;
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+    }
+}

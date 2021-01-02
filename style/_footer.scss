@@ -1,0 +1,62 @@
+@import './variable';
+
+#footer {
+    height: 70vh;
+    width: 100%;
+    background: $lightGray;
+
+    .boost{
+        height: 50%;
+        background: $darkViolet;
+        background-image: url(../images/bg-boost-desktop.svg);
+        font-family: $font;
+        @include flex(center,column);
+
+        h1{
+            color: #ffffff;
+        }
+        button{
+            margin-top: .5rem;
+            @include button();
+            color: #ffffff;
+
+            &:hover{
+                background-color: $lightCyan;
+            }
+        }
+    }
+    .last{
+        height: 50%;
+        background: $veryDarkBlue;
+        @include flex(space-around,row);
+        color: #ffffff;
+        font-family: $font;
+
+        li {
+            cursor: pointer;
+
+            &:hover{
+                color: $lightCyan;
+            }
+        }
+
+        .social {
+            display: flex;
+
+            li {
+                margin: 0 .5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    html {
+        font-size: 50% !important;
+    }
+    #footer {
+        .boost {
+            height: 30% !important;
+        }
+    }
+}

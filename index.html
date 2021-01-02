@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div class="navIcon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.svg" alt="Logo"></a>
+            </div>
+            <div class="navList">
+                <ul class="listItems">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+
+                <div id="login">
+                    <button class="login">Login</button>
+                    <button class="signup">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="intro">
+            <div class="leftText">
+                <h1>More than just <br> shorter links</h1>
+                <p>Build your brand's recognition and get detailed <br> insights on how links are performing.</p>
+                <button>Get Started</button>
+            </div>
+
+            <div class="rightImg">
+                <img src="./images/illustration-working.svg" alt="Working Image">
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="center">
+
+        <form id="inputUrl">
+            <input type="text" class="input" id="input" placeholder="Shorten a link here...">
+
+            <button class="inputBtn" type="submit">Shorten It</button>
+        </form>
+        <div class="shortedLink">
+            <p id="toShort">Link</p>
+            <input type="text" id="shorted" value="link">
+            <button id="copy">Copy</button>
+        </div>
+        <div class="centerHeading">
+            <h1>Advanced Statistics</h1>
+            <p>Track how your links are performing across the web with our <br> advanced statistics dashboard.</p>
+        </div>
+
+        <div class="features">
+            <div class="featureBox feature1">
+                <div class="iconContainer">
+                    <img src="./images/icon-brand-recognition.svg" alt="">
+                </div>
+                <h1>Brand Recognition</h1>
+                <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your content.</p>
+            </div>
+            <div class="featureBox feature2">
+                <div class="iconContainer">
+                    <img src="./images/icon-detailed-records.svg" alt="">
+                </div>
+                <h1>Detailed Records</h1>
+                <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+            </div>
+            <div class="featureBox feature3">
+                <div class="iconContainer">
+                    <img src="./images/icon-fully-customizable.svg" alt="">
+                </div>
+                <h1>Fully Customizable</h1>
+                <p>Improve brand awareness and content  through customizable links supercharging audience engagement.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="boost">
+            <h1>Boost your links today</h1>
+            <button><a href="#input">Get Started</a></button>
+        </div>
+
+        <div class="last">
+            <div class="short">
+                <h1>Shortly</h1>
+            </div>
+            <div>
+                <h3>Features</h3>
+                <ul>
+                    <li>Link Shortening</li>
+                    <li>Branded Links</li>
+                    <li>Analytics</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Resources</h3>
+                <ul>
+                    <li>Blog</li>
+                    <li>Developers</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Our Team</li>
+                    <li>Careers</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul  class="social">
+                    <li><img src="./images/icon-facebook.svg" alt=""></li>
+                    <li><img src="./images/icon-instagram.svg" alt=""></li>
+                    <li><img src="./images/icon-twitter.svg" alt=""></li>
+                    <li><img src="./images/icon-pinterest.svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
